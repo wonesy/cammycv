@@ -6,6 +6,8 @@ main {
   width: 100%;
   height: 100%;
   background-color: var(--main-bg-color);
+  font-family: 'Hind Siliguri', sans-serif;
+  padding-bottom: 100px;
 }
 
 .intro {
@@ -13,10 +15,6 @@ main {
   padding-top: 100px;
   isolation: isolate;
   position: relative;
-}
-
-.something {
-  height: 2000px;
 }
 
 .sun {
@@ -71,4 +69,137 @@ main {
 
 .top {
   top: 0;
+}
+
+
+@media only screen and (min-width: 600px)  {
+  .experience {
+    margin-left: 15%;
+  }
+}
+
+.experience > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.15rem;
+  margin-bottom: 2rem;
+}
+
+.mt-150 {
+  margin-top: 150px;
+}
+
+.experience-node {
+  position: relative;
+  display: flex;
+  /* gap: 2.5rem; */
+  /* margin-top: 1.5rem; */
+  align-items: stretch;
+  /* padding-top: 50px */
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 300px;
+}
+
+.left-side > div {
+  padding-right: 1.25rem;
+}
+
+.right-side > div {
+  padding-left: 1.25rem;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.pink-dot {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--pink-dot);
+  z-index: 1;
+  left: 285px;
+  top: 50px;
+}
+
+.experience-node > .divider {
+  /* position: absolute; */
+  height: 100px;
+  top: 0.5em;
+  left: 13px;
+  background-color: black;
+  width: 2px;
+}
+
+.experience-node:last-child > .divider {
+  height: 50px;
+  top: 0.5em;
+  left: 13px;
+  background-color: black;
+  width: 2px;
+}
+
+.experience-node  .title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.experience-node  .datestring {
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+.experience-node  .company {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.experience-node  .location {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-left: 25px;
+}
+
+/* skills */
+
+.skills > h1 {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11rem;
+  line-height: 275px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+}
+
+.advanced-label {
+  writing-mode: vertical-rl;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.advanced-skill {
+  min-width: 700px;
+  background-color: var(--advanced-salmon);
+  margin: 5px 0;
+  padding: 4px 20px;
+  border-radius: 1rem;
 }
