@@ -12,17 +12,18 @@ function ExperienceNode({
   location,
 }: ExperienceNodeProps) {
   return (
-    <div className="experience-node">
-      <div className="left-side">
-        <div className="title">{title}</div>
-        <div className="datestring">{datestring}</div>
+    <div className="relative">
+      <div className="experience-node">
+        <div className="left-side">
+          <div className="title">{title}</div>
+          <div className="datestring">{datestring}</div>
+        </div>
+        <div className="right-side">
+          <div className="company">{company}</div>
+          <div className="location">{location}</div>
+          <div className="pink-dot" />
+        </div>
       </div>
-      <span className="divider" />
-      <div className="right-side">
-        <div className="company">{company}</div>
-        <div className="location">{location}</div>
-      </div>
-      <div className="pink-dot" />
     </div>
   )
 }

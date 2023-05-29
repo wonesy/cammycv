@@ -79,7 +79,7 @@ main {
 }
 
 .experience > h1 {
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   text-transform: capitalize;
   letter-spacing: 0.15rem;
@@ -87,47 +87,49 @@ main {
 }
 
 .mt-150 {
-  margin-top: 150px;
+  margin-top: 350px;
 }
 
+/* experience */
+
 .experience-node {
-  position: relative;
-  display: flex;
-  /* gap: 2.5rem; */
-  /* margin-top: 1.5rem; */
-  align-items: stretch;
-  /* padding-top: 50px */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  min-height: 120px;
 }
 
 .left-side {
-  display: flex;
-  flex-direction: column;
+  grid-column: 1;
+  border-right: 2px solid black;
   text-align: right;
-  width: 300px;
+  padding-right: 1rem;
 }
 
-.left-side > div {
-  padding-right: 1.25rem;
-}
-
-.right-side > div {
-  padding-left: 1.25rem;
+.left-side::after {
+  border: 2px black solid;
+  position: absolute;
+  width: 20px;
+  height: 20px;
 }
 
 .right-side {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  grid-column: 2;
 }
 
 .pink-dot {
   position: absolute;
   height: 30px;
   width: 30px;
+  background-color: var(--advanced-salmon);
   border-radius: 50%;
-  background-color: var(--pink-dot);
-  z-index: 1;
-  left: 285px;
-  top: 50px;
+  bottom: 2rem;
+  left: -2rem;
+}
+
+.relative {
+  position: relative;
 }
 
 .experience-node > .divider {
@@ -177,10 +179,22 @@ main {
   font-family: 'Hind Siliguri';
   font-style: normal;
   font-weight: 700;
-  font-size: 11rem;
+  font-size: 4rem;
   line-height: 275px;
   text-align: center;
   letter-spacing: 0.2em;
+}
+
+@media screen and (min-width: 600px) {
+  .skills > h1 {
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11rem;
+    line-height: 275px;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
 }
 
 .skills-container {
