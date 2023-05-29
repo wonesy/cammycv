@@ -197,9 +197,20 @@ main {
 }
 
 .advanced-skill {
-  min-width: 700px;
+  min-width: 200px;
   background-color: var(--advanced-salmon);
   margin: 5px 0;
   padding: 4px 20px;
   border-radius: 1rem;
 }
+
+@media screen and (min-width: 600px) {
+  .advanced-skill {
+    min-width: 700px;
+    background-color: var(--advanced-salmon);
+    margin: 5px 0;
+    padding: 4px 20px;
+    border-radius: 1rem;
+  }
+}
+
