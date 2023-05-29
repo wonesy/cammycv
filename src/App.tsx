@@ -1,6 +1,6 @@
 
 import './App.css'
-import { City } from './City'
+import { CityBot, CityTop } from './City'
 import { Sun } from './Sun'
 
 function App() {
@@ -15,11 +15,13 @@ function App() {
               </div>
             </div>
             <div className="bottom">
-              <City />
+              <CityTop />
             </div>
         </div>
         <div className="something">
-          <p>yooo</p>
+          <div className="top">
+            <CityBot />
+          </div>
         </div>
       </main>
     </div>

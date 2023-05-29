@@ -9,7 +9,7 @@ main {
 }
 
 .intro {
-  height: 200vh;
+  height: 100vh;
   padding-top: 100px;
   isolation: isolate;
   position: relative;
@@ -66,5 +66,9 @@ main {
 
 .bottom {
   position: absolute;
-  bottom: 100vh;
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
