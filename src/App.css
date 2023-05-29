@@ -73,17 +73,24 @@ main {
 
 
 @media only screen and (min-width: 600px)  {
-  .experience {
+  .experience > h1 {
     margin-left: 15%;
   }
 }
 
 .experience > h1 {
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: capitalize;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 600px)  {
+  .experience > h1 {
+    font-size: 3.8rem;
+    letter-spacing: 0.5rem;
+  }
 }
 
 .mt-150 {
@@ -94,9 +101,15 @@ main {
 
 .experience-node {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  min-height: 120px;
+  min-height: 150px;
+}
+
+@media only screen and (min-width: 600px)  {
+  .experience-node {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .left-side {
@@ -126,6 +139,20 @@ main {
   border-radius: 50%;
   bottom: 2rem;
   left: -2rem;
+}
+
+.hide-border {
+  position: absolute;
+  height: 2rem;
+  width: 10px;
+  background-color: var(--main-bg-color);
+  bottom: 0;
+  left: -1.3rem;
+  display: none;
+}
+
+.experience > .experience-node:last-child .hide-border {
+  display: block;
 }
 
 .relative {
