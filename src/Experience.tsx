@@ -33,6 +33,12 @@ export function Experience() {
       <h1>EXPERIENCE</h1>
       <ExperienceNode
         title="Senior software engineer"
+        datestring="Mar 2020 - Present"
+        company="Opolis"
+        location="Helsinki, Finland"
+      />
+      <ExperienceNode
+        title="Senior software engineer"
         datestring="Mar 2020 - Feb 2023"
         company="Vaisala"
         location="Helsinki, Finland"
@@ -53,13 +59,13 @@ export function Experience() {
         title="System validation engineer"
         datestring="Sep 2013 - Aug 2017"
         company="Intel"
-        location="Portland, Oregon"
+        location="Portland, Oregon, USA"
       />
       <ExperienceNode
         title="Software engineer"
         datestring="Jan 2013 - Aug 2013"
         company="Booz Allen Hamilton"
-        location="Baltimore, Maryland"
+        location="Baltimore, Maryland, USA"
       />
     </section>
   )

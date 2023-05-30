@@ -224,15 +224,21 @@ main {
   }
 }
 
+.advanced-skills-container {
+  display: flex;
+  justify-content: center;
+}
+
 .skills-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .advanced-label {
   writing-mode: vertical-rl;
   text-align: center;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.5rem;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -255,3 +261,53 @@ main {
   }
 }
 
+.proficient-skills-container {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 50%;
+  max-width: 800px;
+  margin: 50px auto 50px auto;
+}
+
+.half-circle-top, .half-circle-bot {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: var(--proficient-pale-yellow);
+}
+@media screen and (min-width: 600px) {
+  .half-circle-top, .half-circle-bot {
+    width: 400px;
+    height: 400px;
+    background-color: var(--proficient-pale-yellow);
+  }
+}
+
+.half-circle-top {
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 50% 50% 0 0;
+}
+
+.half-circle-bot {
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: 0 0 50% 50%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.proficient-label {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.proficient-skill {
+  font-size: 20px;
+}
