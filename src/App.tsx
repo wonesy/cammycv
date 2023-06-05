@@ -22,10 +22,10 @@ function App() {
           <div className="top">
             <CityBot />
           </div>
-          <div className="mt-150">
+          <div className="spacer">
             <Experience />
           </div>
-          <div className="mt-150">
+          <div className="spacer">
             <Skills />
           </div>
         </div>

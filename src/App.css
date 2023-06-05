@@ -93,8 +93,13 @@ main {
   }
 }
 
-.mt-150 {
-  margin-top: 350px;
+.spacer {
+  margin-top: 100px;
+}
+@media only screen and (min-width: 600px)  {
+  .spacer {
+    margin-top: 350px;
+  }
 }
 
 /* experience */
@@ -206,7 +211,7 @@ main {
   font-family: 'Hind Siliguri';
   font-style: normal;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 275px;
   text-align: center;
   letter-spacing: 0.2em;
