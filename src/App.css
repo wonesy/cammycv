@@ -212,7 +212,7 @@ main {
   font-style: normal;
   font-weight: 700;
   font-size: 3rem;
-  line-height: 275px;
+  line-height: 175px;
   text-align: center;
   letter-spacing: 0.2em;
 }
@@ -350,4 +350,87 @@ main {
 
 .proficient-skill {
   font-size: 20px;
+}
+
+.knowledgeable-skills-container {
+  position: relative;
+  display: flex;
+  width: 80%;
+  z-index: 1;
+  margin-right: 50px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .knowledgeable-skills-container {
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+}
+
+.triangle {
+  /* margin-left: 100px; */
+  left: 0;
+  bottom: -100px;
+  position: absolute;
+  z-index: 0;
+  width: 200px;
+  height: 400px;
+  border-right: 200px transparent solid;
+  border-top: 0;
+  border-bottom: 400px var(--triangle-brick) solid;
+}
+@media screen and (min-width: 600px) {
+  .triangle {
+  /* margin-left: 100px; */
+  right: -100px;
+  bottom: -200px;
+  position: absolute;
+  z-index: 0;
+  width: 600px;
+  height: 800px;
+  border-left: 600px transparent solid;
+  border-top: 0;
+  border-bottom: 500px var(--triangle-brick) solid;
+}
+}
+
+
+.knowledgeable-list {
+  text-align: right;
+  z-index: 1;
+}
+
+.knowledgeable-list p {
+  font-size: 40px;
+}
+@media screen and (min-width: 600px) {
+  .knowledgeable-list p {
+    line-height: 90px;
+    font-size: 50px;
+  }
+}
+
+/* education */
+
+.education-container {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 7fr; */
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.education-label {
+  border-right: 2px solid black;
+  writing-mode: vertical-rl;
+}
+
+.education-details {
+
 }

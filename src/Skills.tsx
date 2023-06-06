@@ -28,6 +28,16 @@ export function Skills() {
             <div className="proficient-skill">c</div>
           </div>
         </div>
+        <div className="knowledgeable-skills-container">
+          <div className="knowledgeable-list">
+            <p className="knowledgeable-label">SOME KNOWLEDGE</p>
+            <div className="knowledgeable-skill">machine learning</div>
+            <div className="knowledgeable-skill">java</div>
+            <div className="knowledgeable-skill">kotlin</div>
+            <div className="knowledgeable-skill">c++</div>
+          </div>
+          <div className="triangle"></div>
+        </div>
       </div>
     </div>
   )

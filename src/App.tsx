@@ -1,5 +1,6 @@
 import "./App.css"
 import { CityBot, CityTop } from "./City"
+import { Education } from "./Education"
 import { Experience } from "./Experience"
 import { Skills } from "./Skills"
 import { Sun } from "./Sun"
@@ -27,6 +28,9 @@ function App() {
           </div>
           <div className="spacer">
             <Skills />
+          </div>
+          <div className="spacer">
+            <Education />
           </div>
         </div>
       </main>
